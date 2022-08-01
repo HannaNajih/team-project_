@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:teamproject/my_app.dart';
+import 'package:teamproject/myApp.dart';
+
 import 'firebase_options.dart';
 
-
-
-Future<void> main() async{
-  runApp( MyApp());
+Future<void> main() async {
+  runApp(MyApp());
   await Firebase.initializeApp(
-  options: DefaultFirebaseOptions.currentPlatform,
-);
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 }
-
